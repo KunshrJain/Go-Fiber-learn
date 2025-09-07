@@ -20,10 +20,10 @@ func main() {
 	app.Get("/:name?", func(c *fiber.Ctx) error {
 		if c.Params("name") != "" {
 			return c.SendString("Hello " + c.Params("name"))
-			// => Hello john
 		}
 		return c.SendString("Where is john?")
 	})
+
 	app.Get("/:value", func(c *fiber.Ctx) error {
 		fmt.Println("value: " + c.Params("value"))
 		return c.SendString("value: " + c.Params("value"))

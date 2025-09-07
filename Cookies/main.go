@@ -38,6 +38,9 @@ func main() {
 		// c.Cookie(cookie)
 		// c.Cookie(cookieTheme)
 		// ...
+
+		// c.ClearCookie()
+
 		return nil
 	})
 	app.Listen(":3000")
